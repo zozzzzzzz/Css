@@ -1,0 +1,171 @@
+body {
+    background-image: url("../css/photo-1589497836818-9ad2fa1df1a0.jfif");
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+p {
+    font-size: 50px;
+    font-family: "Sofia", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px #ababab;    
+}
+table {
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px #ababab;    
+
+}
+button{
+    font-family:"Sofia", sans-serif ;
+    background-color:red;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 50px;
+
+}
+
+
+
+a{
+    color:red;
+}
+
+
+
+.list__skill{
+
+    text-shadow: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+
+
+.skill{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    list-style: none;
+    
+    font-size: 2rem;
+
+    text-shadow: none;
+
+    padding: .7rem;
+
+    border-radius: 15px;
+
+}
+
+
+
+.skill:nth-of-type(even){
+    background-color: rgb(130, 215, 187);
+    color: black;
+}
+
+.skill:nth-of-type(odd){
+    background-color: rgb(58, 58, 103);
+}
+
+
+
+
+footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 42, 93);
+
+}
+
+footer{
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    
+
+}
+
+footer *{
+    margin : 0 auto;
+}
+
+footer button{
+    width: 200px;
+    border-radius: 50px;
+    margin: 20px auto;
+
+}
+
+
+.links{
+    display: flex;
+    gap:5rem;
+    margin:20px auto;
+}
+
+h1{
+    color: white; 
+    font-family: "Sofia", sans-serif;   
+   
+}
+
+
+.contact__me{
+    background-color: orangered;
+    text-decoration: none;
+    padding: 0 .5rem;
+    border-radius: 50px;
+    margin: 20px auto;
+
+}
+
+.contact__me h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex_row{
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_row span{
+
+    color: white;
+    font-size: 2rem;
+
+    cursor: pointer;
+
+}
+.My__hobbies{
+    background-color: orangered;
+    text-decoration: none;
+    padding: 0 .5rem;
+    border-radius: 50px;
+    margin: 20px auto;
+}
+.My__hobbies h1{
+    font-family: 'Courier New', Courier, monospace;
+}
