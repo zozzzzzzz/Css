@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+    
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+    
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+    
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+    
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+    
+        @media screen and (max-height: 450px) {
+          .sidenav {
+            padding-top: 15px;
+          }
+    
+          .sidenav a {
+            font-size: 18px;
+          }
+        }
+      </style>
+    <style>
+        body {
+          font-family: Arial;
+        }
+    
+        * {
+          box-sizing: border-box;
+        }
+    
+        .openBtn {
+          background: #f1f1f1;
+          border: none;
+          padding: 10px 15px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+    
+        .openBtn:hover {
+          background: #bbb;
+        }
+    
+        .overlay {
+          height: 100%;
+          width: 100%;
+          display: none;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+    
+        .overlay-content {
+          position: relative;
+          top: 46%;
+          width: 80%;
+          text-align: center;
+          margin-top: 30px;
+          margin: auto;
+        }
+    
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+          cursor: pointer;
+          color: white;
+        }
+    
+        .overlay .closebtn:hover {
+          color: #ccc;
+        }
+    
+        .overlay input[type=text] {
+          padding: 15px;
+          font-size: 17px;
+          border: none;
+          float: left;
+          width: 80%;
+          background: white;
+        }
+    
+        .overlay input[type=text]:hover {
+          background: #f1f1f1;
+        }
+    
+        .overlay button {
+          float: left;
+          width: 20%;
+          padding: 15px;
+          background: #ddd;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+    
+        .overlay button:hover {
+          background: #bbb;
+        }
+      </style>
+</head>
+<body style="overflow-x: hidden;" style="overflow-y:hidden ;">
+
+    <header>
+        <div class="flex_row">
+
+            <span onclick="openNav()">open ⇶</span>
+            <button onclick="viewLogin()" style="width: auto;" class="button">Search</button>
+        </div>
+        <div>
+        <em>
+        <p>I'm ziad</p>
+        <p>I'm web developer</p>
+        </em>
+    </div> 
+    </header>
+
+
+    <main>
+        <hr width="70%" style="margin: 0px auto;">
+
+    <section>
+        <table style="margin: 0px auto;">
+            <tr> 
+                <td>
+                    <em>
+                        <p>Hello...❤</p>
+                    </em>
+                </td>
+                <tr>
+                <td>
+                <img src="./css/265736094_1339748413120244_306488351189418705_n.jpg" width="300" style="border-radius: 70px;" alt="ziad profile photo"> 
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    
+                        
+                <h3><em>I am Ziad Mohamed Hassan Front-end Developer and member of web development</em> <br> * <a href="https://www.facebook.com/GDSCAASTMTAswan" target="_blank">GDSCAASTMTAswan</a> * </h3>
+                        
+                    
+                </td>
+            </tr>
+            </table>
+    </section>
+
+
+    <hr width="70%" style="margin: 0px auto;">
+
+    <section>
+
+        <table style="margin: 0px auto;">
+            <tbody>
+            <tr>
+                <td>   
+                    <h1 ><em> My Skills..!</em></h1>
+                    
+                    <div class="myskills">
+                        <ul class="list__skill">
+                            •<li class="skill">HTML</li>
+                            •<li class="skill">c</li>
+                            •<li class="skill">python</li>
+                            •<li class="skill">css</li>
+                            •<li class="skill">c++</li>
+                            •
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    </main>
+
+
+
+<footer>
+    <h1>Get In Touch</h1>
+
+    <a href="./contact.html" class="contact__me" > <h1>Contact Me</h1></a> 
+    <a href="./hobbies.html" class="My__hobbies"> <h1>My Hobbies</h1></a>
+    
+    <hr width="70%" style="margin: 0px auto;">
+
+    <div class="links">
+
+        
+       <a href="https://m.facebook.com/100012552942023/"  target="_blank"><h2>FaceBook</h2></a>
+       <a href="https://github.com/zozzzzzzz?tab=stars" target="_blank"><h2>github</a></h2>
+    </div>
+</footer>
+
+<div id="myOverlay" class="overlay" style="display: none;">
+
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+
+    <div class="overlay-content">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
